@@ -22,6 +22,7 @@ modules:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
       - https://packages.microsoft.com/config/fedora/40/prod.repo # hardcoded 40!
       - https://packages.microsoft.com/yumrepos/edge/config.repo
+      - https://packages.microsoft.com/yumrepos/vscode/config.repo
     install:
       - fish
       - zellij
@@ -30,6 +31,7 @@ modules:
       - podman-docker
       - docker-compose
       - microsoft-edge-stable
+      - code
       
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
