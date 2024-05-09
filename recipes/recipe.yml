@@ -10,22 +10,30 @@ image-version: 40 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+    ## Install MS RPM repo
+  # - type: script
+  #   snippets:
+  #     - "curl -sSL -O https://packages.microsoft.com/config/<distribution>/<version>/packages-microsoft-prod.rpm > /tmp/packages-microsoft-prod.rpm"
+  #     - "rpm -i /tmp/packages-microsoft-prod.rpm"
+  #     - "rm /tmp/packages-microsoft-prod.rpm"
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/varlad/zellij/repo/fedora-%OS_VERSION%/varlad-zellij-fedora-%OS_VERSION%.repo
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      - https://packages.microsoft.com/config/fedora/40/prod.repo # hardcoded 40!
     install:
       - fish
       - zellij
       - chromium
       - tailscale
+      - microsoft-edge-stable
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       # - firefox
       # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-
-  - type: default-flatpaks
+      
+    - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       # If no repo information is specified, Flathub will be used by default
