@@ -21,14 +21,12 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/varlad/zellij/repo/fedora-%OS_VERSION%/varlad-zellij-fedora-%OS_VERSION%.repo
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
       - https://packages.microsoft.com/config/fedora/40/prod.repo # hardcoded 40!
+      - https://packages.microsoft.com/yumrepos/edge/config.repo
     install:
       - fish
       - zellij
       - chromium
       - tailscale
-      - packages-microsoft-prod
-  - type: rpm-ostree
-    install:
       - microsoft-edge-stable
       
   - type: default-flatpaks
