@@ -27,6 +27,8 @@ modules:
       - zellij
       - chromium
       - tailscale
+      - podman-docker
+      - docker-compose
       - microsoft-edge-stable
       
   - type: default-flatpaks
