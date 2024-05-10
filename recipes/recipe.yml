@@ -32,6 +32,7 @@ modules:
       - docker-compose
       - microsoft-edge-stable
       - https://github.com/mockoon/mockoon/releases/download/v8.1.1/mockoon-8.1.1.x86_64.rpm
+      - https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64
       - lens
       
   - type: default-flatpaks
