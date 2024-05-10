@@ -22,7 +22,6 @@ modules:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
       - https://packages.microsoft.com/config/fedora/40/prod.repo # hardcoded 40!
       - https://packages.microsoft.com/yumrepos/edge/config.repo
-      - https://packages.microsoft.com/yumrepos/vscode/config.repo
       - https://downloads.k8slens.dev/rpm/lens.repo
     install:
       - fish
@@ -32,7 +31,7 @@ modules:
       - podman-docker
       - docker-compose
       - microsoft-edge-stable
-      - code
+      - https://github.com/mockoon/mockoon/releases/download/v8.1.1/mockoon-8.1.1.x86_64.rpm
       - lens
       
   - type: default-flatpaks
