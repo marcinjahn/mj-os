@@ -38,19 +38,42 @@ modules:
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
-      # If no repo information is specified, Flathub will be used by default
-      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      # repo-name: flathub
-      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
-        # - org.mozilla.firefox
-        # - org.gnome.Loupe
-        # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
-      # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
-      # only normal flatpak applications are (like Floorp Lightning web browser in this example).
-      # Installing different branches of the same Flatpak is not supported.
-      remove:
-      # - org.gnome.eog
+        - app.drey.Dialect
+        - ca.desrt.dconf-editor
+        - com.belmoussaoui.Obfuscate
+        - com.getpostman.Postman
+        - com.github.finefindus.eyedropper
+        - com.github.jeromerobert.pdfarranger
+        - com.github.liferooter.textpieces
+        - com.github.maoschanz.drawing
+        - com.github.marhkb.Pods
+        - com.github.tchx84.Flatseal
+        - com.github.tenderowl.frog
+        - com.mattjakeman.ExtensionManager
+        - com.mongodb.Compass
+        - com.rafaelmardojai.Blanket
+        - com.raggesilver.BlackBox
+        - com.simplenote.Simplenote
+        - dev.deedles.Trayscale
+        - dev.skynomads.Seabird
+        - io.dbeaver.DBeaverCommunity
+        - io.github.fabrialberio.pinapp
+        - io.gitlab.adhami3310.Converter
+        - io.gitlab.adhami3310.Impression
+        - io.missioncenter.MissionCenter
+        - net.nokyan.Resources
+        - org.gnome.Builder
+        - org.gnome.Epiphany
+        - org.gnome.Loupe
+        - org.gnome.design.IconLibrary
+        - org.gnome.meld
+        - org.kde.ark
+        - org.localsend.localsend_app
+        - org.nickvision.tubeconverter
+        - org.onlyoffice.desktopeditors
+        - page.codeberg.libre_menu_editor.LibreMenuEditor
+        - re.sonny.Playhouse
 
   - type: systemd
     system:
