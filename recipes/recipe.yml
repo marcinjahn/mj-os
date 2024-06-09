@@ -23,7 +23,7 @@ modules:
       - https://packages.microsoft.com/config/fedora/40/prod.repo # hardcoded 40!
       - https://packages.microsoft.com/yumrepos/edge/config.repo
       - https://downloads.k8slens.dev/rpm/lens.repo
-      - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/ 
+      - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/repo/fedora-40/alternateved-keyd-fedora-40.repo
     install:
       - fish
       - zellij
