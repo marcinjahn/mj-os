@@ -78,6 +78,11 @@ modules:
   - type: brew
     brew-analytics: false
 
+  - type: chezmoi
+    repository: "https://github.com/marcinjahn/dotfiles"
+    file-conflict-policy: "replace"
+    wait-after-boot: '1m'
+
   - type: systemd
     system:
       enabled:
