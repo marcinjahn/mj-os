@@ -23,6 +23,7 @@ modules:
       - https://packages.microsoft.com/config/fedora/40/prod.repo # hardcoded 40!
       - https://packages.microsoft.com/yumrepos/edge/config.repo
       - https://downloads.k8slens.dev/rpm/lens.repo
+      - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/ 
     install:
       - fish
       - zellij
@@ -34,6 +35,7 @@ modules:
       - https://github.com/mockoon/mockoon/releases/download/v8.1.1/mockoon-8.1.1.x86_64.rpm
       - https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64
       - lens
+      - keyd
       
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -83,9 +85,14 @@ modules:
     file-conflict-policy: "replace"
     wait-after-boot: '1m'
 
+  - type: files
+    files:
+      - usr: /usr 
+
   - type: systemd
     system:
       enabled:
+      - keyd
       - tailscaled
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
