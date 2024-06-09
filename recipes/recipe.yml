@@ -75,6 +75,9 @@ modules:
         - page.codeberg.libre_menu_editor.LibreMenuEditor
         - re.sonny.Playhouse
 
+  - type: brew
+    brew-analytics: false
+
   - type: systemd
     system:
       enabled:
