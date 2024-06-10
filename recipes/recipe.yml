@@ -36,6 +36,7 @@ modules:
       - https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64
       - lens
       - keyd
+      - https://slack.com/downloads/instructions/linux?ddl=1&build=rpm
       
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
