@@ -36,7 +36,7 @@ modules:
       - https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64
       - lens
       - keyd
-      - https://slack.com/downloads/instructions/linux?ddl=1&build=rpm
+      - https://downloads.slack-edge.com/desktop-releases/linux/x64/4.38.125/slack-4.38.125-0.1.el8.x86_64.rpm
       
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
