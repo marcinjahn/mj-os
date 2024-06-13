@@ -1,5 +1,6 @@
 # mj-os &nbsp; [![build-ublue](https://github.com/marcinjahn/mj-os/actions/workflows/build.yml/badge.svg)](https://github.com/marcinjahn/mj-os/actions/workflows/build.yml)
 
+Fedora-based atomic (container-based) OS adhered to my needs, made possible by the [Universal Blue](https://universal-blue.org/) initiative and [Fedora Silverblue](https://fedoraproject.org/atomic-desktops/silverblue/).
 ## Installation
 
 To rebase an existing atomic Fedora installation to the latest build:
