@@ -25,6 +25,12 @@ modules:
       - https://downloads.k8slens.dev/rpm/lens.repo
       - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/repo/fedora-40/alternateved-keyd-fedora-40.repo
     install:
+      - gcc
+      - make
+      - git
+      - ripgrep
+      - fd-find
+      - unzip
       - fish
       - neovim
       - python3-neovim
