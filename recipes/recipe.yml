@@ -26,6 +26,8 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/repo/fedora-40/alternateved-keyd-fedora-40.repo
     install:
       - fish
+      - neovim
+      - python3-neovim
       - zellij
       - chromium
       - tailscale
